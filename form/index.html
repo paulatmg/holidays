@@ -1,0 +1,132 @@
+<form action="http://localhost:3000/getCountry" target="_blank" method="post">
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Holidays</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Holidays</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters mb-5">
+							<div class="col-md-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Request Info</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your request was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="fullName">Full Name</label>
+													<input type="text" class="form-control" name="fullName" id="fullName" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<br>
+											<div class="col-md-12">
+
+												<div class="form-group">
+													<label class="label" name="countryByUser" id="countryByUser" name="countryByUser" for="countryByUser">Select two or more countries</label>
+													<br>
+													<input type="checkbox" id="BR" name="countryByUser" value="BR">
+													<label for="brazil">Brazil</label><br>
+													<input type="checkbox" id="US" name="countryByUser" value="US">
+													<label for="unitedStates">United States</label><br>
+													<input type="checkbox" id="UK" name="countryByUser" value="UK">
+													<label for="UnitedKingdom">United Kingdom</label><br>
+													<input type="checkbox" id="PT" name="countryByUser" value="PT">
+													<label for="portugal">Portugal</label><br>
+													<input type="checkbox" id="CH" name="countryByUser" value="CH">
+													<label for="china">China</label><br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<input id="saveForm" name="saveForm" type="submit" value="Submit" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div id="map">
+									<img style='height: 100%; width: 100%; object-fit: cover'src="GW7p(1).gif" class="world-map" alt="">
+			          </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-phone"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Phone:</span> <a href="tel://+17192860677">+1 (719) 286-0677</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-paper-plane"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Email:</span> <a href="mailto:paulatmgomes@gmail.com">paulatmgomes@gmail.com</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-globe"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span></span> <a href="#">www.linkedin.com/in/paulatmg</a></p>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="form/js/jquery.min.js"></script>
+  <script src="form/js/popper.js"></script>
+  <script src="form/js/bootstrap.min.js"></script>
+  <script src="form/js/jquery.validate.min.js"></script>
+  <script src="form/world-map.gif"></script>
+  <script src="form/js/google-map.js"></script>
+  <script src="form/js/main.js"></script>
+	</body>
+</html>
+
+</form>

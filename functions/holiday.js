@@ -20,7 +20,7 @@ async function handlerFunction({ fullName, email, countryByUser }) {
 
     console.log("result", resultCountry);
 
-    const finalResult = await processHolidays({ filteredHolidays: resultCountry});
+    const finalResult = await processHolidays({ filteredHolidays: resultCountry });
 
     console.log("FINAAAAAAAL", finalResult);
 
@@ -31,11 +31,11 @@ async function handlerFunction({ fullName, email, countryByUser }) {
 
 
 
-async function processHolidays( { filteredHolidays}){
+async function processHolidays({ filteredHolidays }) {
     const result = filteredHolidays.filter(holiday => {
-        return (filteredHolidays.filter( subHoliday => subHoliday.date === holiday.date)).length > 1
+        return (filteredHolidays.filter(subHoliday => subHoliday.date === holiday.date)).length > 1
     })
-return result;
+    return result;
 }
 
 
@@ -109,7 +109,44 @@ const holidays = [
     { date: "06/03", country: "UK", description: "Platinum Jubilee bank holiday" },
     { date: "08/29", country: "UK", description: "Summer bank holiday" },
     { date: "12/26", country: "UK", description: "Boxing Day" },
-    { date: "12/27", country: "UK", description: "Christmas Day (substitute day)" }
+    { date: "12/27", country: "UK", description: "Christmas Day (substitute day)" },
+    { date: "01/01", country: "CH", description: "New Year's Day" },
+    { date: "04/15", country: "CH", description: "Good Friday" },
+    { date: "04/25", country: "CH", description: "Freedom Day" },
+    { date: "05/01", country: "CH", description: "Labor Day" },
+    { date: "06/10", country: "CH", description: "Portugal Day" },
+    { date: "06/16", country: "CH", description: "Corpus Christi" },
+    { date: "08/15", country: "CH", description: "Assumption Day" },
+    { date: "10/05", country: "CH", description: "Republic Day" },
+    { date: "11/01", country: "CH", description: "All Saint's Day" },
+    { date: "12/01", country: "CH", description: "Restoration of Independence" },
+    { date: "12/08", country: "CH", description: "Immaculate Conception Day" },
+    { date: "12/25", country: "CH", description: "Christmas Day" },
+    { date: "01/01", country: "CH", description: "New Year's Day" },
+    { date: "01/02", country: "CH", description: "New Year's Day" },
+    { date: "01/03", country: "CH", description: "New Year's Day" },
+    { date: "01/31", country: "CH", description: "Spring Festival Holiday" },
+    { date: "02/01", country: "CH", description: "Spring Festival Holiday" },
+    { date: "02/02", country: "CH", description: "Spring Festival Holiday" },
+    { date: "02/03", country: "CH", description: "Spring Festival Holiday" },
+    { date: "02/04", country: "CH", description: "Spring Festival Holiday" },
+    { date: "04/03", country: "CH", description: "Ching Ming Festival" },
+    { date: "04/04", country: "CH", description: "Ching Ming Festival" },
+    { date: "04/05", country: "CH", description: "Ching Ming Festival" },
+    { date: "05/01", country: "CH", description: "Labor Day" },
+    { date: "05/02", country: "CH", description: "Labor Day" },
+    { date: "05/03", country: "CH", description: "Labor Day" },
+    { date: "05/04", country: "CH", description: "Labor Day" },
+    { date: "06/03", country: "CH", description: "Dragon Boat Festival" },
+    { date: "09/10", country: "CH", description: "Mid-Autumn Festival" },
+    { date: "09/12", country: "CH", description: "Mid-Autumn Festival" },
+    { date: "10/01", country: "CH", description: "Chinese National Day" },
+    { date: "10/02", country: "CH", description: "Chinese National Day" },
+    { date: "10/03", country: "CH", description: "Chinese National Day" },
+    { date: "10/04", country: "CH", description: "Chinese National Day" },
+    { date: "10/05", country: "CH", description: "Chinese National Day" },
+    { date: "10/06", country: "CH", description: "Chinese National Day" },
+    { date: "10/07", country: "CH", description: "Chinese National Day" },
 ]
 
 
