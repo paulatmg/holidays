@@ -8,8 +8,6 @@ const axios = require('axios').default;
 
 router.post('/', function (req, res, next) {
 
-console.log("formulario", req.body);
-
     functions.handlerFunction({
         fullName: req.body.fullName,
         email: req.body.email,
