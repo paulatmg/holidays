@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Response</h2>
+
+<table>
+
+
+
+
+
+
+  <tr>
+    <th>Date</th>
+    <th>Country</th>
+    <th>Description</th>
+  </tr>
+  {{#each data}}
+  <tr>
+    
+    <td>{{this.date}}</td>
+    <td>{{this.country}}</td>
+    <td>{{this.description}}</td>
+   
+  </tr>
+
+   {{/each}}
+
+</table>
+
+</body>
+</html>
+

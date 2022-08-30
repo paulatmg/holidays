@@ -15,8 +15,8 @@ router.post('/', function (req, res, next) {
     })
 
 
-      .then((response) => res.send(response))
-      .catch((error) => res.send(error.message));
+      .then((response) => res.render('getCountry', {data: response.sort(function(a,b){return a.date > b.date ? 1 : a.date < b.date ? -1 : 0 })}))
+      .catch((error) => res.render(error.message));
   });
   
   module.exports = router;
